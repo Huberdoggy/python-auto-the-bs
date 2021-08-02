@@ -9,8 +9,10 @@ def formatted_list(my_lst):
     for i in range(len(my_lst)):
         if i < my_lst.index(combo):
             print(my_lst[i] + ', ', end='')
+
         else:
             print(my_lst[i] + ' ', end='')
+
 
 
 
