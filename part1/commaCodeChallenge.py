@@ -5,7 +5,7 @@ spam = []
 combo = 'and'
 
 def formatted_list(my_lst):
-    spam.insert(-1, combo)
+    my_lst.insert(-1, combo)
     for i in range(len(my_lst)):
         if i < my_lst.index(combo):
             print(my_lst[i] + ', ', end='')
