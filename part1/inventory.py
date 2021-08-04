@@ -1,6 +1,7 @@
 """Write a function that accepts any possible 'inventory' dictionary and
 displays it in prettified format"""
 
+
 ascent_char_inv = {'shotgun ammo': 45,
                    'handgun ammo': 125, 'energy': 80,
                    'augmentation': 2}
@@ -31,8 +32,4 @@ def add_to_inventory(inventory, added_items):
 # Run 'add_to_inventory' first, so that additional loot gets calculated
 inv = add_to_inventory(ascent_char_inv, looted_items)
 print("\n***INVENTORY***")
-# print(f"- Shotgun Ammo\t {str(ascent_char_inv['shotgun ammo'])}")
-# print(f"- Handgun Ammo\t {str(ascent_char_inv['handgun ammo'])}")
-# print(f"- Energy\t {str(ascent_char_inv['energy'])}")
-# print(f"- Augmentation\t {str(ascent_char_inv['augmentation'])}")
 print(f"\nTOTAL NUMBER OF ITEMS => {display_inventory(inv)}")
