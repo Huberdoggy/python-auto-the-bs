@@ -5,11 +5,10 @@ least one digit. You may need to test the string against multiple regex patterns
 validate its strength."""
 import re
 from time import sleep
-# We will attempt to match each pattern individually, since it's not pertinent
-# that they be in any order - only that a strong password includes ALL of these components
-
 
 def compile_patterns():
+    # We will attempt to match each pattern individually, since it's not pertinent
+    # that they be in any order - only that a strong password includes ALL of these components
     reg_expressions = {
         "length": ".{8}",
         "lower-case": "[a-z]+",
